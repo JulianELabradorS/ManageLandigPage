@@ -1,0 +1,113 @@
+.footer {
+    background-color: $VeryDarkBlue;
+    text-align: center;
+    color: $VeryLightGray;
+
+    >div {
+        padding: 70px 25px 50px 25px;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            padding: 15px 20px;
+            border-radius: 50px;
+            width: 75%;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            @extend %button--general;
+            box-shadow: none;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+        margin-bottom: 20px;
+
+        ul {
+            list-style: none;
+            text-align: left;
+
+            li {
+                margin-bottom: 20px;
+
+                a {
+                    margin: 10px 0;
+                    text-decoration: none;
+                    color: $VeryLightGray
+                }
+            }
+
+        }
+    }
+
+    &__logo {
+        &__social {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            margin-top: 20px;
+
+            img {
+                width: 30px;
+            }
+        }
+
+        &__main {
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .footer {
+        >div {
+            max-width: 1440px;
+            display: flex;
+            flex-direction: row-reverse;
+            position: relative;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 70px 60px;
+            margin: 0 auto;
+
+            span {
+                position: absolute;
+                bottom: 20%;
+            }
+
+        }
+
+        &__form {
+            width: 30%;
+        }
+
+        &__nav {
+            margin: 0;
+            width: 50%;
+        }
+
+        &__logo {
+            width: 20%;
+
+            &__social {
+                margin: 0;
+            }
+
+            &__main {
+                margin-top: 85px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

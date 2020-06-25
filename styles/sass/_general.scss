@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $Family;
+    background-image: url('../images/bg-tablet-pattern.svg'), url('../images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: 460px, 360px;
+    background-position: 50px -120px, 240px 400px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: $Dark-Blue;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+p {
+    color: $DarkGrayishBlue;
+}
+
+.container {
+    padding: 0 25px;
+
+}
+
+@media only screen and (min-width:768px) {
+    body {
+        background-size: initial;
+        background-position: 775px -170px, -400px 1050px;
+        overflow: auto;
+    }
+
+    h1 {
+        font-size: 3.7em;
+    }
+
+    h2 {
+        font-size: 2.7em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .container {
+        max-width: 1440px;
+        padding: 0 60px;
+        margin: 0 auto;
+
+    }
+}

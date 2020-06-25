@@ -1,0 +1,47 @@
+.simplify {
+    background-image: url('../images/bg-simplify-section-mobile.svg');
+    background-color: $Bright-Red;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 25px;
+
+    div {
+        p {
+            font-size: 3em;
+            color: $VeryLightGray;
+        }
+
+        button {
+            @extend %button--white;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .simplify {
+        background-image: url('../images/bg-simplify-section-desktop.svg');
+        background-position: 245px 100;
+        padding: 80px 60px;
+
+        div {
+            display: flex;
+            max-width: 1440px;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1;
+
+            p {
+                font-size: 3.7em;
+                max-width: 670px;
+                text-align: left;
+            }
+
+            button {
+                margin: 0;
+            }
+        }
+    }
+}
